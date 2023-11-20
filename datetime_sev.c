@@ -3,7 +3,7 @@
 #include"stdio.h"
 #include"string.h"
 #include"time.h"
-main( )
+main()
 {
     struct sockaddr_in sa;
     struct sockaddr_in cli;int sockfd,conntfd;int len,ch;char str[100];

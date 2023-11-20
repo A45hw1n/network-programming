@@ -27,7 +27,7 @@ int main()
   // Socket address structure
   server_addr.sin_family = AF_INET;
   server_addr.sin_port = PORT;
-  server_addr.sin_addr.s_addr = INADDR_ANY;
+  server_addr.sin_addr.s_addr = INADDR_ANY; // Listen on all interfaces (eg, tun0, eth0)
 
   // Bind local address to socket
   bind(sockfd, (struct sockaddr *)&server_addr, sizeof server_addr);
